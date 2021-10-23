@@ -12,6 +12,10 @@ public struct Phrase: Codable {
   public var end: TimeInterval
   public var words: [Word]
   public var priority: Int
+  
+  public var interval: TimecodeInterval {
+    return .init(start: start, end: end)
+  }
 }
 
 extension Phrase: Comparable {

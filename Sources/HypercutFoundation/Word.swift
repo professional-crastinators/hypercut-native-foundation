@@ -15,4 +15,8 @@ public struct Word: Codable {
   public var isDiscardable: Bool {
     return word.starts(with: "_")
   }
+  
+  public var interval: TimecodeInterval {
+    return .init(start: start, end: end)
+  }
 }
