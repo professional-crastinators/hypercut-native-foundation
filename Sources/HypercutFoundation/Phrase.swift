@@ -14,12 +14,12 @@ public struct Phrase: Codable {
   public var priority: Int
 }
 
-public extension Phrase: Comparable {
-  static func < (lhs: Phrase, rhs: Phrase) -> Bool {
+extension Phrase: Comparable {
+  public static func < (lhs: Phrase, rhs: Phrase) -> Bool {
     lhs.priority < rhs.priority
   }
   
-  static func == (lhs: Phrase, rhs: Phrase) -> Bool {
+  public static func == (lhs: Phrase, rhs: Phrase) -> Bool {
     lhs.priority == rhs.priority
   }
 }
