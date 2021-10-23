@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct Word: Codable {
-  var start: TimeInterval
-  var end: TimeInterval
-  var word: String
+public struct Word: Codable {
+  public var start: TimeInterval
+  public var end: TimeInterval
+  public var word: String
   
-  var isDiscardable: Bool {
+  public var isDiscardable: Bool {
     return word.starts(with: "_")
   }
 }

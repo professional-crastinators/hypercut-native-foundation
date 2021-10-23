@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct Phrase: Codable {
-  var start: TimeInterval
-  var end: TimeInterval
-  var words: [Word]
-  var priority: Int
+public struct Phrase: Codable {
+  public var start: TimeInterval
+  public var end: TimeInterval
+  public var words: [Word]
+  public var priority: Int
 }
 
-extension Phrase: Comparable {
+public extension Phrase: Comparable {
   static func < (lhs: Phrase, rhs: Phrase) -> Bool {
     lhs.priority < rhs.priority
   }
