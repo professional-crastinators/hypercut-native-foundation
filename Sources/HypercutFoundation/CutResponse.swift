@@ -14,11 +14,9 @@ public struct CutResponse: Codable {
   public var spaces: [Space]
   
   public var completed: Bool {
-    guard
-      message == "Not completed yet",
-      phrases.isEmpty,
-      spaces.isEmpty
-    else {
+    if message == "Not completed yet",
+        phrases.isEmpty,
+        spaces.isEmpty {
       return false
     }
     
