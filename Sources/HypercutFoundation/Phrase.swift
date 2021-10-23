@@ -11,7 +11,7 @@ public struct Phrase: Codable {
   public var start: TimeInterval
   public var end: TimeInterval
   public var words: [Word]
-  public var priority: Double
+  public var priority: Int
   public var transcript: String
   
   public var interval: TimecodeInterval {
