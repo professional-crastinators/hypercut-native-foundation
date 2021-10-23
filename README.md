@@ -1,3 +1,3 @@
-# hypercut-native-foundation
+# Hypercut Native Foundation
 
-A description of this package.
+[![Swift](https://github.com/professional-crastinators/hypercut-native-foundation/actions/workflows/swift.yml/badge.svg)](https://github.com/professional-crastinators/hypercut-native-foundation/actions/workflows/swift.yml)
