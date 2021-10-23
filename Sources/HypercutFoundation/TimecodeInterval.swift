@@ -8,6 +8,6 @@
 import Foundation
 
 public struct TimecodeInterval: Codable {
-  var start: Double
-  var end: Double
+  public var start: Double
+  public var end: Double
 }
